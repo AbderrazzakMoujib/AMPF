@@ -1,0 +1,46 @@
+<?php
+return [
+    'meta_title'         => 'Membership Application — AMPF',
+    'meta_desc'          => 'Join AMPF and enjoy exclusive benefits reserved for refrigeration professionals.',
+    'hero_label'         => 'Membership',
+    'hero_title'         => 'Membership Application',
+    'hero_desc'          => "Join the network of refrigeration professionals in Morocco. Fill in the form below.",
+    'breadcrumb_current' => 'Membership',
+
+    'how_label'  => 'How it works',
+    'process_title' => 'Membership process',
+    'process_desc'  => 'Simple and fast — become a member in 4 steps.',
+
+    'step1_title' => 'Fill in the form',
+    'step1_desc'  => 'Enter your professional details and select the plan matching your annual turnover.',
+    'step2_title' => 'Make the transfer',
+    'step2_desc'  => 'Complete your bank transfer using the RIB below. Include your name as payment reference.',
+    'step3_title' => 'Send the receipt',
+    'step3_desc'  => 'Send your transfer receipt to <strong style="color:var(--blue-light)">adhesion@ampf.ma</strong> with your full details.',
+    'step4_title' => 'Confirmation within 48h',
+    'step4_desc'  => 'You will receive your membership card and email confirmation within 48 working hours.',
+
+    'rib_account'   => 'Official AMPF account',
+    'rib_holder'    => 'Account holder',
+    'rib_click'     => 'click to reveal',
+    'download_rib'  => 'Download RIB',
+    'send_receipt'  => 'Send receipt',
+
+    'form_title'    => 'Membership Form',
+    'success_msg'   => 'Application sent! We will contact you within 48 hours.',
+    'confidential'  => 'Your information is confidential and will not be shared.',
+
+    'l_fullname'    => 'Full name *',
+    'l_email'       => 'Professional email *',
+    'l_company'     => 'Company name *',
+    'l_phone'       => 'Phone',
+    'l_city'        => 'City / Address',
+    'l_plan'        => 'Annual turnover — Plan *',
+    'ph_fullname'   => 'Your full name',
+    'ph_email'      => 'email@company.com',
+    'ph_company'    => 'Company legal name',
+    'ph_phone'      => '+212 6xx xxx xxx',
+    'ph_city'       => 'Casablanca, Rabat...',
+    'ph_plan'       => 'Select your plan',
+    'btn_submit'    => 'Submit my application',
+];

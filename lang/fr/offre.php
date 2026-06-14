@@ -1,0 +1,46 @@
+<?php
+return [
+    'meta_title'         => "Demande d'adhésion — AMPF",
+    'meta_desc'          => "Rejoignez l'AMPF et bénéficiez d'avantages exclusifs réservés aux professionnels du froid.",
+    'hero_label'         => 'Adhésion',
+    'hero_title'         => "Demande d'adhésion",
+    'hero_desc'          => "Rejoignez le réseau des professionnels du froid au Maroc. Remplissez le formulaire ci-dessous.",
+    'breadcrumb_current' => 'Adhésion',
+
+    'how_label'  => 'Comment ça marche',
+    'process_title' => "Processus d'adhésion",
+    'process_desc'  => 'Simple et rapide — devenez membre en 4 étapes.',
+
+    'step1_title' => 'Remplissez le formulaire',
+    'step1_desc'  => "Saisissez vos informations professionnelles et choisissez la formule adaptée à votre chiffre d'affaires.",
+    'step2_title' => 'Effectuez le virement',
+    'step2_desc'  => 'Réglez la cotisation par virement bancaire via le RIB ci-dessous. Mentionnez votre nom en référence.',
+    'step3_title' => 'Envoyez le justificatif',
+    'step3_desc'  => 'Envoyez votre reçu de virement à <strong style="color:var(--blue-light)">adhesion@ampf.ma</strong> avec vos coordonnées.',
+    'step4_title' => 'Confirmation sous 48h',
+    'step4_desc'  => 'Vous recevrez votre carte membre et confirmation par email dans les 48 heures ouvrables.',
+
+    'rib_account'   => 'Compte officiel AMPF',
+    'rib_holder'    => 'Titulaire',
+    'rib_click'     => 'cliquez pour révéler',
+    'download_rib'  => 'Télécharger RIB',
+    'send_receipt'  => 'Envoyer reçu',
+
+    'form_title'    => "Formulaire d'adhésion",
+    'success_msg'   => 'Demande envoyée ! Nous vous contacterons sous 48h.',
+    'confidential'  => 'Vos informations sont confidentielles et ne seront pas partagées.',
+
+    'l_fullname'    => 'Nom complet *',
+    'l_email'       => 'Email professionnel *',
+    'l_company'     => "Nom de l'entreprise *",
+    'l_phone'       => 'Téléphone',
+    'l_city'        => 'Ville / Adresse',
+    'l_plan'        => "Chiffre d'affaires annuel — Formule *",
+    'ph_fullname'   => 'Votre nom complet',
+    'ph_email'      => 'email@societe.ma',
+    'ph_company'    => 'Raison sociale',
+    'ph_phone'      => '+212 6xx xxx xxx',
+    'ph_city'       => 'Casablanca, Rabat...',
+    'ph_plan'       => 'Sélectionnez votre formule',
+    'btn_submit'    => 'Soumettre ma demande',
+];

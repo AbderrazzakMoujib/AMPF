@@ -1,0 +1,268 @@
+/* ═══════════════════════════════════════════
+   AMPF — OFFRE PAGE
+   File: public/css/offre.css
+═══════════════════════════════════════════ */
+
+.offre-section { background: var(--white); }
+
+.offre-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: start;
+}
+
+/* ─── STEPS ──────────────────────────────── */
+.offre-steps-list {
+    margin: 36px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.offre-step {
+    display: flex;
+    gap: 18px;
+    padding-bottom: 26px;
+    position: relative;
+}
+
+.offre-step:last-child { padding-bottom: 0; }
+
+.offre-step::before {
+    content: '';
+    position: absolute;
+    left: 19px; top: 40px; bottom: 0;
+    width: 2px;
+    background: var(--ice-mid, #cce8f8);
+}
+
+.offre-step:last-child::before { display: none; }
+
+.offre-step-num {
+    width: 40px; height: 40px;
+    background: var(--navy); color: white;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Syne', sans-serif; font-weight: 700; font-size: 14px;
+    flex-shrink: 0; position: relative; z-index: 1;
+}
+
+.offre-step-title {
+    font-family: 'Syne', sans-serif;
+    font-size: 15px; font-weight: 700;
+    color: var(--navy); margin-bottom: 4px;
+    padding-top: 8px;
+}
+
+.offre-step-desc { font-size: 13px; color: var(--gray); line-height: 1.6; }
+
+/* ─── RIB ────────────────────────────────── */
+.offre-rib {
+    background: var(--navy);
+    border-radius: 18px;
+    padding: 26px;
+    margin-top: 8px;
+    position: relative;
+    overflow: hidden;
+}
+
+.offre-rib::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--blue), var(--gold-light));
+}
+
+.offre-rib-header {
+    display: flex; align-items: center; gap: 12px;
+    margin-bottom: 18px; padding-bottom: 16px;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+
+.offre-rib-icon {
+    width: 40px; height: 40px;
+    background: rgba(26,86,219,0.15);
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--blue-light); font-size: 16px;
+}
+
+.offre-rib-bank {
+    font-family: 'Syne', sans-serif;
+    font-size: 15px; font-weight: 700; color: white;
+}
+
+.offre-rib-sub { font-size: 12px; color: rgba(255,255,255,0.4); }
+
+.offre-rib-rows { display: flex; flex-direction: column; gap: 10px; margin-bottom: 18px; }
+
+.offre-rib-row {
+    display: flex; justify-content: space-between; align-items: center;
+}
+
+.offre-rib-row > span:first-child {
+    font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px;
+    color: rgba(255,255,255,0.35);
+}
+
+.rib-val {
+    font-family: 'Syne', sans-serif;
+    font-size: 13px; font-weight: 700; color: white;
+    background: rgba(255,255,255,0.07);
+    padding: 5px 12px; border-radius: 7px;
+    letter-spacing: 0.8px;
+}
+
+.rib-blur {
+    filter: blur(4px);
+    cursor: pointer;
+    transition: filter 0.3s;
+}
+
+.rib-blur small {
+    font-size: 10px; font-weight: 400;
+    color: rgba(255,255,255,0.3);
+    letter-spacing: 0; display: block;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.rib-blur:hover { filter: blur(2px); }
+.rib-blur.revealed { filter: none; cursor: default; }
+
+.offre-rib-actions {
+    display: flex; gap: 10px;
+}
+
+.rib-btn-sm {
+    flex: 1;
+    padding: 9px;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.12);
+    background: rgba(255,255,255,0.05);
+    color: rgba(255,255,255,0.6);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px; font-weight: 500;
+    cursor: pointer;
+    display: flex; align-items: center; justify-content: center; gap: 6px;
+    transition: all 0.2s; text-decoration: none;
+}
+
+.rib-btn-sm:hover {
+    background: rgba(255,255,255,0.12);
+    color: white;
+}
+
+/* ─── FORM CARD ──────────────────────────── */
+.offre-form-card {
+    background: var(--navy);
+    border-radius: 22px;
+    padding: 38px;
+    position: relative;
+    overflow: hidden;
+}
+
+.offre-form-top {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--blue), var(--gold-light));
+}
+
+.offre-form-title {
+    font-family: 'Syne', sans-serif;
+    font-size: 22px; font-weight: 800;
+    color: white; margin-bottom: 26px;
+}
+
+.alert-success {
+    background: rgba(34,197,94,0.1);
+    border: 1px solid rgba(34,197,94,0.3);
+    color: #4ade80;
+    padding: 12px 16px;
+    border-radius: 10px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    display: flex; align-items: center; gap: 8px;
+}
+
+.offre-form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+.form-group { margin-bottom: 14px; }
+
+.form-group label {
+    display: block;
+    font-size: 11px; font-weight: 600;
+    color: rgba(255,255,255,0.4);
+    margin-bottom: 7px;
+    letter-spacing: 0.5px; text-transform: uppercase;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    color: white;
+    padding: 11px 14px;
+    border-radius: 10px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    transition: all 0.2s;
+    outline: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.form-group input::placeholder { color: rgba(255,255,255,0.22); }
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: var(--blue-light);
+    background: rgba(26,86,219,0.1);
+}
+
+.form-group select option { background: var(--navy); color: white; }
+
+.offre-submit {
+    width: 100%;
+    background: linear-gradient(135deg, var(--blue), var(--blue-light));
+    color: white;
+    padding: 14px;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Syne', sans-serif;
+    font-size: 15px; font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-top: 6px;
+    display: flex; align-items: center; justify-content: center; gap: 8px;
+}
+
+.offre-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(26,86,219,0.5);
+}
+
+.offre-form-note {
+    font-size: 12px;
+    color: rgba(255,255,255,0.25);
+    margin-top: 16px;
+    text-align: center;
+    display: flex; align-items: center; justify-content: center; gap: 6px;
+}
+
+/* ─── RESPONSIVE ─────────────────────────── */
+@media (max-width: 1100px) {
+    .offre-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 560px) {
+    .offre-form-row { grid-template-columns: 1fr; }
+    .offre-form-card { padding: 24px 20px; }
+}
